@@ -11,13 +11,8 @@ const useForm = (initValue) => {
         })
     }
 
-    const clearForm = e => {
-        e.preventDefault();
-        setValues(initValue)
-    }
-
     return (
-        [values, handleChanges, clearForm]
+        [values, handleChanges]
     )
 }
 

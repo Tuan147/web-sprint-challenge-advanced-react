@@ -114,12 +114,19 @@ test("displays plants in cart", () => {
 
 ## Interview Questions
 
-Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. Add your answers below.
+Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. Add your answers below. 
+
 
 1. What are the main differences between a class-based and a functional component?
+  Class-based components extends React, it creates a component and renders out a react element. A functional component is a function that accepts a prop as an argument and returns a react element. The main difference is rendering and props between the two.
 
 2. When does a componentWillMount function be called? What about a componentDidUpdate?
+  componentWillMount is called after mounting has occured and componentDidUpdate will be called when you need to rerender something.
 
 3. Define stateful logic.
+  Any code that uses state. State can be multiple values that describe the UI or whatever is the targeted data.
 
 4. What are the three step of creating a successful test? What is done in each phase? 
+  1. First you need to Arrange your test in order.
+  2. Second you need to Act on your test by doing a complete submission.
+  3. Third you need to Assert which means to expect what the outcome of the test will be. 

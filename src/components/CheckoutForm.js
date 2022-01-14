@@ -17,7 +17,7 @@ import useForm from "../hooks/useForm";
 const CheckoutForm = () => {
 
   const [showSuccessMessage, setShowSuccessMessage] = useState(false);
-  const [values, handleChanges, clearForm] = useForm({
+  const [values, handleChanges] = useForm({
     firstName: "",
     lastName: "",
     address: "",
@@ -73,7 +73,6 @@ const CheckoutForm = () => {
           <input name="zip" value={values.zip} onChange={handleChanges} />
         </label>
         <button>Checkout</button>
-        <button onClick={clearForm}>Clear</button>
       </form>
 
       {showSuccessMessage && (
